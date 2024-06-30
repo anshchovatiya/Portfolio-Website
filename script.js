@@ -1,5 +1,5 @@
-let cursorBall = document.querySelector(".cursor");
-let cursorOutline = document.querySelector(".cursorOutline");
+// let cursorBall = document.querySelector(".cursor");
+// let cursorOutline = document.querySelector(".cursorOutline");
 let About = document.getElementById("ABOUT");
 let Home = document.getElementById("HOME");
 let heroImage = document.getElementById("hero-image");
@@ -19,8 +19,8 @@ let Blog = document.getElementById("BLOG")
 let anchorTag = document.querySelectorAll(".link");
 
 
-cursorBall.style.position = "absolute";
-cursorOutline.style.position = "absolute";
+// cursorBall.style.position = "absolute";
+// cursorOutline.style.position = "absolute";
 
 
 
@@ -141,38 +141,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // this function that track's the mouse and move cursorBall and cursorOutline on that place 
 
-document.addEventListener("mousemove", (e) => {
-    cursorBall.style.top = e.pageY + "px";
-    cursorBall.style.left = e.pageX + "px";
-    cursorOutline.style.top = e.pageY + "px";
-    cursorOutline.style.left = e.pageX + "px";
-    anchorTag.forEach((event) => {
-        event.addEventListener("mouseover", () => {
-            cursorBall.classList.add("cursor-hover");
-            cursorOutline.classList.add("hidden");
-        })
-        event.addEventListener("mouseout", () => {
-            cursorBall.classList.remove("cursor-hover");
-            cursorOutline.classList.remove("hidden");
-        })
-    });
+// document.addEventListener("mousemove", (e) => {
+//     cursorBall.style.top = e.pageY + "px";
+//     cursorBall.style.left = e.pageX + "px";
+//     cursorOutline.style.top = e.pageY + "px";
+//     cursorOutline.style.left = e.pageX + "px";
+//     anchorTag.forEach((event) => {
+//         event.addEventListener("mouseover", () => {
+//             cursorBall.classList.add("cursor-hover");
+//             cursorOutline.classList.add("hidden");
+//         })
+//         event.addEventListener("mouseout", () => {
+//             cursorBall.classList.remove("cursor-hover");
+//             cursorOutline.classList.remove("hidden");
+//         })
+//     });
 
-});
+// });
 
 
 
 // this function is mouse onclick effect 
-document.addEventListener("mousedown", (e) => {
-    if (e.button === 0) {
-        cursorOutline.classList.add("cursor-mousedown");
+// document.addEventListener("mousedown", (e) => {
+//     if (e.button === 0) {
+//         cursorOutline.classList.add("cursor-mousedown");
 
-    }
-});
+//     }
+// });
 
-//   this function is for mouseup effect 
-document.addEventListener("mouseup", () => {
-    cursorOutline.classList.remove("cursor-mousedown");
-});
+// //   this function is for mouseup effect 
+// document.addEventListener("mouseup", () => {
+//     cursorOutline.classList.remove("cursor-mousedown");
+// });
 
 
 
