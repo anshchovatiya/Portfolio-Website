@@ -15,9 +15,9 @@
     <style>
         .circle {
             background: conic-gradient(from 0deg, #FFB400 0%, #FFB400 0% var(--i), #333 var(--i), #333 100%);
-        };
+        }
 
-    
+        ;
     </style>
 </head>
 
@@ -26,13 +26,14 @@
 
 
     <!-- preloading screen started  -->
-     <div class="preload fixed h-svh w-full flex justify-center items-center z-[999]  before:content-['g'] before:absolute before:flex before:justify-center before:items-center
-      before:bg-[#FFB400] before:h-full before:w-8">
-        <div class="w-1/2 bg-[#111111] h-full pre-main1"></div>
-        <!-- <div class="bg-[#FFB400] h-svh preload-anime  "></div> -->
-        <div class="w-1/2 bg-[#111111] h-full pre-main2"></div>
-     </div>
-     <!-- preloading screen ended  -->
+    <div class="preload fixed h-svh w-full flex justify-center items-center z-[999] overflow-hidden">
+        <div class="w-1/2 bg-[#252525] h-full pre-main1"></div>
+
+        <div class="bg-[#FFB400] h-svh preload-anime absolute"></div>
+
+        <div class="w-1/2 bg-[#252525] h-full pre-main2"></div>
+    </div>
+    <!-- preloading screen ended  -->
 
 
     <!-- menubar button  -->`
@@ -60,8 +61,8 @@
 
 
     <!-- this will customize the cursor of the browser  -->
-    <div class="cursor-ball cursor cursor-none"></div>
-    <div class="cursor-outline cursorOutline"></div>
+    <!-- <div class="cursor-ball cursor cursor-none"></div>
+    <div class="cursor-outline cursorOutline"></div> -->
 
 
     <i id="MenuButton"
@@ -99,7 +100,7 @@
 
 
     <!-- pages started  -->
-    <div class="w-full bg-white  dark:bg-[#111111] ">
+    <div class="w-full bg-white  dark:bg-[#111111] -mt-6">
 
         <!-- hero section  -->
         <div id="HOME"
@@ -707,7 +708,8 @@
 
 
         <!-- blog full page started  -->
-        <div id="Blog-Description" class="fixed h-full w-full dark:bg-[#111111] mx-auto  overflow-x-hidden text-[#666666] dark:text-white hidden">
+        <div id="Blog-Description"
+            class="fixed h-full w-full dark:bg-[#111111] mx-auto  overflow-x-hidden text-[#666666] dark:text-white hidden">
             <h2
                 class="text-[#666666] w-full  dark:text-white text-2xl sm:text-[56px] relative font-extrabold p-4 bg-[#252525] sm:bg-transparent sm:text-center sm:py-20 lg:pt-20 z-20 overflow-hidden flex sm:justify-center sm:items-center">
                 MY <span class="text-[#FFB400] z-20 ml-3 ">BLOGS</span>
@@ -734,9 +736,21 @@
             <div class=" max-w-[900px] m-auto px-9 mb-16">
                 <p class="text-2xl md:text-5xl font-bold blog-tittle ">Top 10 Toolkits For Deep Learning In 2020</p>
                 <img src="./assets/blog-post-1.jpg" alt="blog-image" class="my-8 rounded-xl blog-image">
-                <p class="text-base mb-3 font-noramal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, quasi exercitationem at vitae esse nihil voluptatibus aliquam consequuntur quidem commodi natus nostrum id ad in et sint quo illum autem vero explicabo ex accusamus optio magni a. Nobis officiis laboriosam culpa animi sit similique, facilis fuga, repudiandae doloremque illum quidem?</p>
-                <p class="text-base mb-3 font-noramal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, quasi exercitationem at vitae esse nihil voluptatibus aliquam consequuntur quidem commodi natus nostrum id ad in et sint quo illum autem vero explicabo ex accusamus optio magni a. Nobis officiis laboriosam culpa animi sit similique, facilis fuga, repudiandae doloremque illum quidem?</p>
-                <p class="text-base mb-3 font-noramal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, quasi exercitationem at vitae esse nihil voluptatibus aliquam consequuntur quidem commodi natus nostrum id ad in et sint quo illum autem vero explicabo ex accusamus optio magni a. Nobis officiis laboriosam culpa animi sit similique, facilis fuga, repudiandae doloremque illum quidem?</p>
+                <p class="text-base mb-3 font-noramal">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quibusdam, quasi exercitationem at vitae esse nihil voluptatibus aliquam consequuntur quidem commodi
+                    natus nostrum id ad in et sint quo illum autem vero explicabo ex accusamus optio magni a. Nobis
+                    officiis laboriosam culpa animi sit similique, facilis fuga, repudiandae doloremque illum quidem?
+                </p>
+                <p class="text-base mb-3 font-noramal">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quibusdam, quasi exercitationem at vitae esse nihil voluptatibus aliquam consequuntur quidem commodi
+                    natus nostrum id ad in et sint quo illum autem vero explicabo ex accusamus optio magni a. Nobis
+                    officiis laboriosam culpa animi sit similique, facilis fuga, repudiandae doloremque illum quidem?
+                </p>
+                <p class="text-base mb-3 font-noramal">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quibusdam, quasi exercitationem at vitae esse nihil voluptatibus aliquam consequuntur quidem commodi
+                    natus nostrum id ad in et sint quo illum autem vero explicabo ex accusamus optio magni a. Nobis
+                    officiis laboriosam culpa animi sit similique, facilis fuga, repudiandae doloremque illum quidem?
+                </p>
             </div>
         </div>
         <!-- blog full page ended  -->

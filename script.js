@@ -14,6 +14,11 @@ let Blog = document.getElementById("BLOG")
 let anchorTag = document.querySelectorAll(".link");
 
 
+setTimeout(()=>{
+    document.querySelector(".preload").classList.add("hidden");
+},4000);
+
+
 // this is function to control About page button 
 document.querySelectorAll(".ABOUT-button").forEach((event) => {
     event.addEventListener("click", () => {

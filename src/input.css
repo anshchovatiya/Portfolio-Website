@@ -166,34 +166,37 @@
     }
   }
 
-  .preload::before {
+  .preload-anime {
     animation: line 2s linear;
     width: 0px;
   }
   @keyframes line {
     0% {
       height: 0px;
-      width: 3px;
+      width: 4px;
+      opacity: 1;
     }
     40%,60%{
-      width: 3px;
+      width: 4px;
       height: 40vh;
+      opacity: 1;
     }
 
-    90% {
-      width: 1px;
+    100% {
+      width: 0px;
       height: 100vh;
+      opacity: 0;
     }
   }
   .pre-main1{
-    animation: divs 4s linear;
+    animation: divs1 4s linear;
   }
 
-  @keyframes divs {
+  @keyframes divs1 {
     0%,50%{
       translate: 0;
     }
-    100%{
+  100%{
       translate: -100%;
     }
   }
@@ -209,4 +212,5 @@
       translate: 100%;
     }
   }
+
 }
