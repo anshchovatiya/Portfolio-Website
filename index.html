@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="Root" class="dark scroll-smooth">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -16,13 +16,26 @@
         .circle {
             background: conic-gradient(from 0deg, #FFB400 0%, #FFB400 0% var(--i), #333 var(--i), #333 100%);
         };
+
+    
     </style>
 </head>
 
 <body id="bodyTag" class="overflow-x-hidden relative dark:bg-[#111111] duration-200 ">
 
 
-    <!-- menubar button  -->
+
+    <!-- preloading screen started  -->
+     <div class="preload fixed h-svh w-full flex justify-center items-center z-[999]  before:content-['g'] before:absolute before:flex before:justify-center before:items-center
+      before:bg-[#FFB400] before:h-full before:w-8">
+        <div class="w-1/2 bg-[#111111] h-full pre-main1"></div>
+        <!-- <div class="bg-[#FFB400] h-svh preload-anime  "></div> -->
+        <div class="w-1/2 bg-[#111111] h-full pre-main2"></div>
+     </div>
+     <!-- preloading screen ended  -->
+
+
+    <!-- menubar button  -->`
     <div id="Menu"
         class="fixed z-[99] top-0 right-0  w-[100px]  bg-slate-200 dark:bg-[#252525] h-full  hidden flex-col justify-center items-center lg:hidden cursor-pointer gap-6 ">
         <div class="HOME-button link  group duration-600 hover:bg-[#FFB400] rounded-full bg-[#00000032] ">
@@ -47,8 +60,8 @@
 
 
     <!-- this will customize the cursor of the browser  -->
-    <!-- <div class="cursor-ball cursor cursor-none"></div>
-    <div class="cursor-outline cursorOutline"></div> -->
+    <div class="cursor-ball cursor cursor-none"></div>
+    <div class="cursor-outline cursorOutline"></div>
 
 
     <i id="MenuButton"
@@ -687,7 +700,7 @@
                 <button id="blog-button-one"
                     class=" py-3 px-5 dark:text-white text-lg rounded-full font-bold link  bg-[#FFB400]">1</button>
                 <button id="blog-button-two"
-                    class=" py-3 px-5 dark:text-white text-lg rounded-full font-bold link  bg-[#0000ff25]">2</button>
+                    class=" py-3 px-5 dark:text-white text-lg rounded-full font-bold link  bg-[#c4a35731]">2</button>
             </div>
         </div>
         <!-- blog section ended here  -->

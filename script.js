@@ -1,10 +1,7 @@
-// let cursorBall = document.querySelector(".cursor");
-// let cursorOutline = document.querySelector(".cursorOutline");
+
 let About = document.getElementById("ABOUT");
 let Home = document.getElementById("HOME");
 let heroImage = document.getElementById("hero-image");
-
-let Root = document.getElementById("Root");
 let currentPage = Home;
 let Portfolio = document.getElementById("PORTFOLIO");
 
@@ -14,14 +11,7 @@ let body = document.getElementById("bodyTag");
 let mouseToggle = document.querySelector(".fa-toggle-on");
 let Contact = document.getElementById("CONTACT");
 let Blog = document.getElementById("BLOG")
-
-
 let anchorTag = document.querySelectorAll(".link");
-
-
-// cursorBall.style.position = "absolute";
-// cursorOutline.style.position = "absolute";
-
 
 
 // this is function to control About page button 
@@ -124,14 +114,15 @@ document.querySelectorAll(".BLOG-button").forEach((event) => {
 document.addEventListener("DOMContentLoaded", () => {
     let darkButton = document.getElementById("dark-button");
     darkButton.addEventListener("click", () => {
-        if (Root.classList.contains("dark")) {
-            Root.classList.remove("dark");
+        console.log("dark button clicked");
+        if (document.documentElement.classList.contains("dark")) {
+            document.documentElement.classList.remove("dark");
             darkButton.classList.remove("fa-sun");
             darkButton.classList.add("fa-moon");
             darkButton.classList.add("px-5");
         }
         else {
-            Root.classList.add("dark");
+            document.documentElement.classList.add("dark");
             darkButton.classList.add("fa-sun");
             darkButton.classList.remove("fa-moon");
             darkButton.classList.remove("px-5");
@@ -140,6 +131,9 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 // this function that track's the mouse and move cursorBall and cursorOutline on that place 
+
+// let cursorBall = document.querySelector(".cursor");
+// let cursorOutline = document.querySelector(".cursorOutline");
 
 // document.addEventListener("mousemove", (e) => {
 //     cursorBall.style.top = e.pageY + "px";
@@ -341,7 +335,7 @@ blogButtonOne.addEventListener("click", () => {
 
         blogButtonOne.style.backgroundColor = "#FFB400";
 
-        blogButtonTwo.style.backgroundColor = "#0000ff25"
+        blogButtonTwo.style.backgroundColor = "#c4a35731"
 
     }
     else {
@@ -356,7 +350,7 @@ blogButtonTwo.addEventListener("click", () => {
         blogGridOne.classList.remove("grid");
         blogButtonTwo.style.backgroundColor = "#FFB400";
 
-        blogButtonOne.style.backgroundColor = "#0000ff25"
+        blogButtonOne.style.backgroundColor = "#c4a35731"
 
 
     }
