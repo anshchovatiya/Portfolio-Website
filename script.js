@@ -33,7 +33,7 @@ document.querySelectorAll(".ABOUT-button").forEach((event) => {
         }, 1200);
         setTimeout(function () {
             animationSlides.classList.add("hidden");
-        }, 2000);
+        }, 2300);
 
     });
 })
