@@ -14,9 +14,9 @@ let Blog = document.getElementById("BLOG")
 let anchorTag = document.querySelectorAll(".link");
 
 
-setTimeout(()=>{
+setTimeout(() => {
     document.querySelector(".preload").classList.add("hidden");
-},4000);
+}, 4000);
 
 
 // this is function to control About page button 
@@ -137,46 +137,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // this function that track's the mouse and move cursorBall and cursorOutline on that place 
 
-// let cursorBall = document.querySelector(".cursor");
-// let cursorOutline = document.querySelector(".cursorOutline");
+let cursorBall = document.querySelector(".cursor");
+let cursorOutline = document.querySelector(".cursorOutline");
 
-// document.addEventListener("mousemove", (e) => {
-//     cursorBall.style.top = e.pageY + "px";
-//     cursorBall.style.left = e.pageX + "px";
-//     cursorOutline.style.top = e.pageY + "px";
-//     cursorOutline.style.left = e.pageX + "px";
-//     anchorTag.forEach((event) => {
-//         event.addEventListener("mouseover", () => {
-//             cursorBall.classList.add("cursor-hover");
-//             cursorOutline.classList.add("hidden");
-//         })
-//         event.addEventListener("mouseout", () => {
-//             cursorBall.classList.remove("cursor-hover");
-//             cursorOutline.classList.remove("hidden");
-//         })
-//     });
+document.addEventListener("mousemove", (e) => {
+    cursorBall.style.top = e.pageY + "px";
+    cursorBall.style.left = e.pageX + "px";
+    cursorOutline.style.top = e.pageY + "px";
+    cursorOutline.style.left = e.pageX + "px";
+    anchorTag.forEach((event) => {
+        event.addEventListener("mouseover", () => {
+            cursorBall.classList.add("cursor-hover");
+            cursorOutline.classList.add("hidden");
+        })
+        event.addEventListener("mouseout", () => {
+            cursorBall.classList.remove("cursor-hover");
+            cursorOutline.classList.remove("hidden");
+        })
+    });
 
-// });
+});
 
 
 
 // this function is mouse onclick effect 
-// document.addEventListener("mousedown", (e) => {
-//     if (e.button === 0) {
-//         cursorOutline.classList.add("cursor-mousedown");
+document.addEventListener("mousedown", (e) => {
+    if (e.button === 0) {
+        cursorOutline.classList.add("cursor-mousedown");
 
-//     }
-// });
+    }
+});
 
 // //   this function is for mouseup effect 
-// document.addEventListener("mouseup", () => {
-//     cursorOutline.classList.remove("cursor-mousedown");
-// });
+document.addEventListener("mouseup", () => {
+    cursorOutline.classList.remove("cursor-mousedown");
+});
 
 
 
 document.getElementById("Project-close-button").addEventListener("click", () => {
     description.classList.add("hidden");
+})
+
+window.addEventListener("resize", () => {
+    cursorBall.style.top = 0 + "px";
+    cursorBall.style.left = 0 + "px";
+    cursorOutline.style.top = 0 + "px";
+    cursorOutline.style.left = 0 + "px";
 })
 
 
